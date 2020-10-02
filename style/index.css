@@ -73,6 +73,8 @@ h1 {
 
 .header nav {
 	padding: 2rem;
+	display: flex;
+	flex-wrap: wrap;
 	
 }
 
@@ -95,12 +97,13 @@ h1 {
 	flex-wrap: wrap;
 	justify-content: space-around;
 	width: 100%;
+	margin-top: 20px;
 	/* height: 100px; */
 }
 
 .body div {
 	/* width: 50%; */
-	border: 1px solid black;
+	/* border: 1px solid black; */
 }
 
 .body-content {
@@ -117,18 +120,24 @@ h1 {
 }
 
 .body-content a {
-	margin-bottom: 20px;
+	margin-top: 15px;
+	margin-bottom: 30px;
 	width: 25%;
 	text-decoration: none;
 	background-color: white;
 	color: black;
 	border: 1px solid black;
-	padding: 5px 15px;
+	padding: 10px 25px;
+	text-align: center;
+	font-size: 23px;
+	display: flex;
+	flex-wrap: wrap;
+	align-self: left;
 }
 
 .body-content p {
 	flex-wrap: wrap;
-	font-size: 25px;
+	font-size: 45px;
 }
 
 .content-img {
@@ -154,10 +163,7 @@ h1 {
 } */
 
 
-a:hover {
-	color: white;
-	background-color: black;
-}
+
 
 
 /* -------------------------------------------------------------- */
@@ -202,5 +208,12 @@ a:hover {
 	border: 1px solid black;
 	padding: 25px 75px;
 	text-decoration: none;
+	color: black;
+	background-color: white;
+	font-size: 30px;
+}
 
+a:hover {
+	color: white;
+	background-color: black;
 }
