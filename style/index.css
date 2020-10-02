@@ -1,3 +1,6 @@
+* {
+	box-sizing: border-box;
+}
 /* Add CSS styling here */
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -81,10 +84,7 @@ h1 {
 	padding: 5px 15px;
 }
 
-.header a:hover {
-	color: white;
-	background-color: black;
-}
+
 
 /* -------------------------------------------------------------------------------- */
 
@@ -92,10 +92,14 @@ h1 {
 
 .body {
 	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	width: 100%;
+	/* height: 100px; */
 }
 
 .body div {
-	width: 50%;
+	/* width: 50%; */
 	border: 1px solid black;
 }
 
@@ -104,6 +108,7 @@ h1 {
 	flex-direction: column;
 	justify-content: flex-end;
 	padding: 5% 5% 0 5%  ;
+	width: 48%;
 }
 
 .body-content h2 {
@@ -113,7 +118,7 @@ h1 {
 
 .body-content a {
 	margin-bottom: 20px;
-	width: 5rem;
+	width: 25%;
 	text-decoration: none;
 	background-color: white;
 	color: black;
@@ -126,10 +131,76 @@ h1 {
 	font-size: 25px;
 }
 
+.content-img {
+	width: 48%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
 .body div img {
-	height: 100%;
-	width: 50%;
+	/* height: 100%; */
+	/* width: 50%; */
+	/* box-sizing: border-box; */
+	max-width: 100%;
+
+
+	/* width: 500px; */
+
+}
+
+/* img {
+	width: 50px;
+} */
+
+
+a:hover {
+	color: white;
+	background-color: black;
 }
 
 
+/* -------------------------------------------------------------- */
 
+
+.gallery {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+
+.gallery div {
+	margin-top: 2.5%;
+	margin-bottom: 2.5% ;
+}
+
+.gallery div p {
+	text-align: center;
+	font-size: 30px;
+	margin-top: 3%;
+}
+
+
+/* ------------------------------------------------------- */
+
+.footer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: lightgrey;
+	/* height: 400px; */
+}
+
+.footer p {
+	font-size: 50px;
+	margin-top: 50px;
+}
+
+.footer a {
+	margin-top: 20px;
+	margin-bottom: 50px;
+	border: 1px solid black;
+	padding: 25px 75px;
+	text-decoration: none;
+
+}
